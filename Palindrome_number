@@ -1,11 +1,12 @@
-n=int(input())
-org=n
-rev=0
-while n>0:
-    rem=n%10
-    rev=rev*10+rem
-    n=n//10
-if rev==org:
-    print("It is a palindrome number")
-else:
-    print("It is not palindrome number")
+def check(x):
+    l=0
+    r=len(x)-1
+    while l<r:
+        if x[l]!=x[r]:
+            return "not a palindrome"
+        else:
+            l+=1
+            r+=1
+        return " palindrome"
+x=str(input())
+print(check(x))
