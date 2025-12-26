@@ -13,6 +13,5 @@ def minion_game(string):
         print("stuart is the winner",s)
     else:
         print("It is a draw")
-if __name__ == '__main__':
-    s = input()
-    minion_game(s)
+string = input()
+minion_game(string)
